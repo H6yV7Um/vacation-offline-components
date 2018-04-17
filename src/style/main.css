@@ -1,0 +1,65 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { margin:0; padding:0; }
+body { font-size:12px; line-height:1.5; font-family:Tahoma,Simsun,sans-serif; color:#333; background:#fff; }
+img, fieldset { margin:0; padding:0; border:0; }
+input, textarea {font-size:14px;}
+table { border-collapse:collapse; }
+a { color:#0065bb; text-decoration:none; outline:none; }
+a:hover { text-decoration:underline; }
+h1, h2, h3, h4, h5 { font-family:Arial,Simsun,sans-serif; }
+ul li, ol li { list-style:none; }
+dfn { font-style:normal; font-size:12px; font-family:Arial !important; }
+select { padding:1px; font-family:Arial,Simsun,sans-serif; border:1px solid #CCC; background-color:#FFF; }
+.basefix,.layoutfix { *zoom:1; }
+.basefix:after,.layoutfix:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.float_left { float:left !important; }
+.float_right { float:right !important; }
+.color_blue{color:#0087cc;}
+.color_orange{color:#ff6600;}
+.weibo{ background-image: url(http://picint.sh.ctriptravel.com/offline_book/new_icon.png);background-repeat: no-repeat;}
+.weibo{ width:20px; height:23px; display:inline-block; vertical-align:-5px;}
+.weibo.v1{ background-position:-33px -10px;}
+.weibo.v2{ background-position:-77px -10px;}
+.weibo.v3{ background-position:-113px -10px;}
+.weibo.v4{ background-position:-152px -10px;}
+.weibo.v5{ background-position:-194px -10px;}
+.crown_box{ display:inline-block; position:relative; cursor:pointer;}
+.crown_icon{ background-image: url(http://picint.sh.ctriptravel.com/offline_book/huang.png);background-repeat: no-repeat;}
+.crown_icon{ width:15px; height:15px; display:inline-block;margin-left:3px;vertical-align:middle;}
+.crown_icon1{background-position:-11px -7px;}
+.crown_icon2{background-position:-29px -7px;}
+.crown_icon3{background-position:-50px -7px;}
+.crown_icon4{background-position:-72px -7px;}
+.crown_icon5{background-position:-96px -7px;}
+.troublesome_box { position: absolute; z-index: 100; top:32px; left:10px; display:none;  }
+.troublesome_box .alert_info { background-color:#FFF5D1; border:1px solid #FFB533; padding:3px; white-space:nowrap; color:#333; font-size:12px; padding-left:10px; line-height:18px;}
+.troublesome_box b, .troublesome_box i { position:absolute; height:0; width:0; line-height:0; font-size:0; border-left:0 none; top:-10px; left:20px;}
+.troublesome_box b { border-right: 5px dashed transparent; border-top: 5px dashed transparent; border-bottom: 5px solid #FFB533; border-left: 5px dashed transparent; }
+.troublesome_box i { border-right: 5px dashed transparent; border-top: 5px dashed transparent; border-bottom: 5px solid #FFF5D1; border-left: 5px dashed transparent; top:-8px; }
+.crown_box:hover .troublesome_box{ display:block;}
+.offline_header_box{background:#f9f9f9;margin-bottom:20px;padding:10px 0;}
+.offline_header_con{width:980px;margin:0 auto;overflow:hidden;}
+.offline_logo{float:left;}
+.offline_header_nav{float:right;width:790px;}
+.offline_header_nav li{float:left;margin-right:10px;padding-right:10px;line-height:36px;position:relative;}
+.offline_header_nav li:after{content:"";position:absolute;right:0;top:50%;margin-top:-5px;height:12px;width:1px;background:#999;}
+.offline_header_nav em{color:#999;display:inline-block;}
+.offline_side_nav{ position:fixed; right:10px; z-index:9999; width:40px; border:1px solid #bfdfff; border-bottom:0; font-size:12px; background:#f8fcfe; color:#0087cc; top:0px; _position:absolute; }
+.offline_side_nav a{ display:block; border-bottom:1px solid #bfdfff; text-align:center; padding:10px 5px;}
+.offline_side_nav a:hover{ background:#39a7ee; color:#ffffff; text-decoration:none;}
+
+
+.h5_box{
+	width:700px;margin:0 auto;border:1px solid #ddd;background:#efeff4;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	overflow: hidden;
+}
+.body_foot{padding-bottom:0!important;}
+.container{height:100%;overflow-y:scroll;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.body_foot .container{padding-bottom:70px;}
+.body_city .container,.body_column .container{overflow-y:visible;}
+.slide_index_nav{margin-top:10px;}
+.slide_nav_item{margin:0 5px;width:14px;height:14px;cursor:pointer;}
+
+
