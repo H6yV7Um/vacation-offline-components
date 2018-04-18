@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from "../style/main.css"
-
+import styles from '../style/main.css'
 export default class Head extends React.PureComponent {
 
     renderUserInfo(userInfo = {}) {

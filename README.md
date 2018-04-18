@@ -5,7 +5,7 @@
 ## Install
 ```
 
-npm install --save vacation-offline-component
+npm install --save vacation-offline-components
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save vacation-offline-component
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Header, SideNav } from 'vacation-offline-component'
+import { Header, SideNav } from 'vacation-offline-components'
 import { userInfo, uid } from './mock'
 
 class App extends React.Component {
