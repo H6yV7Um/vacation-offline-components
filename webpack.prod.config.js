@@ -11,7 +11,8 @@ module.exports = {
     output: {
         filename: "main.bundle.js",
         path: path.resolve(__dirname, "./dist"),
-        libraryTarget: "umd"
+        library: 'vacation-offline-components',
+        libraryTarget: "commonjs2"
     },
     module: {
         rules: [
@@ -28,12 +29,12 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    "style-loader",
+                    "iso-morphic-style-loader",
                     {
                         loader: "css-loader",
                         options: {
                             modules: true,
-                            localIdentName: "[name]_[local]_[hash:base64:5]"
+                            localIdentName: "[local]"
                         }
                     }
                 ],

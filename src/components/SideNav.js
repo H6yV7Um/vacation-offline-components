@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../style/main.css'
+const styles = require('../style/main.css')
 
 export default (props) => {
     const { uid = ''} = props

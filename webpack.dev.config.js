@@ -31,9 +31,10 @@ module.exports = {
                     "style-loader",
                     {
                         loader: "css-loader",
+
                         options: {
                             modules: true,
-                            localIdentName: "[name]__[local]__[hash:base64:5]"
+                            localIdentName: "[name]_[local]_[hash:base64:5]"
                         }
                     }
                 ],
@@ -42,7 +43,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.resolve(__dirname, "./dist"),
+        contentBase: path.resolve(__dirname, "./build"),
         hot: true,
         host: 'localhost',
         port: 8080

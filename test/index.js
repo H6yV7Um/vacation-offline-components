@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Header, SideNav } from '../dist/index'
+import { Header, SideNav } from '../dist/main.bundle.js'
 import { userInfo, uid } from './mock'
 
 class App extends React.Component {
