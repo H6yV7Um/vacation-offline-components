@@ -1,6 +1,7 @@
 // const HTMLWebpackPlugin = require('html-webpack-plugin')
 // const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 // const webpack = require('webpack')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -8,8 +9,8 @@ module.exports = {
         'index': path.resolve(__dirname, "./src/index.js")
     },
     output: {
-        filename: "main.js",
-        path: path.resolve(__dirname, "./dist/"),
+        filename: "main.bundle.js",
+        path: path.resolve(__dirname, "./dist"),
         libraryTarget: "umd"
     },
     module: {
@@ -19,10 +20,10 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['env', 'react', "stage-0"]
+                        presets: ["env", "react", "stage-0"]
                     }
                 },
-                exclude: path.resolve(__dirname, "./node_modules/")
+                exclude: path.resolve(__dirname, "./node_modules")
             },
             {
                 test: /\.css$/,
@@ -32,11 +33,11 @@ module.exports = {
                         loader: "css-loader",
                         options: {
                             modules: true,
-                            localIdentName: "[name]__[local]__[hash:base64:5]"
+                            localIdentName: "[name]_[local]_[hash:base64:5]"
                         }
                     }
                 ],
-                exclude: path.resolve(__dirname, "./node_modules/")
+                exclude: path.resolve(__dirname, "./node_modules")
             }
         ]
     },
@@ -47,5 +48,8 @@ module.exports = {
             umd: 'react'
         }
     },
-    plugins: []
+    plugins: [
+        new CleanWebpackPlugin(['./dist'])
+    ],
+    mode: 'production'
 }

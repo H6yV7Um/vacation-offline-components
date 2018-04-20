@@ -11,6 +11,10 @@
 .DS_Store
 .idea
 .vscode
+.babelrc
+.editorconfig
+.eslintrc.js
+
 npm-debug.log
 webpack.dev.config.js
-webpack.pro.config.js
+webpack.prod.config.js

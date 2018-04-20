@@ -1,4 +1,4 @@
 export {
     Header,
     SideNav
-} from './dist/index'
+} from './dist/main.bundle.js'

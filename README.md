@@ -1,21 +1,24 @@
-# vacation-offline-component
+# vacation-offline-components
 
-一些offline-component
+some components used in vacation's offline-sites
+
+contain: Header, SideNav
 
 ## Install
-```
 
+```sh
 npm install --save vacation-offline-components
 ```
 
 ## Usage
+
+1. first，import comps from vacation-offline-components
+```js
+import { Header, SideNav } from 'vacation-offline-components'
 ```
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Header, SideNav } from 'vacation-offline-components'
-import { userInfo, uid } from './mock'
-
+2. next, use these components in your react component
+```js
 class App extends React.Component {
     render() {
         return (
@@ -29,3 +32,5 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.getElementById('app'))
 ```
+
+you should give an userInfo prop to Header and also an uid prop to SideNav 

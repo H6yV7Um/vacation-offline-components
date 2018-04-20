@@ -1,6 +1,8 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 // const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
-// const webpack = require('webpack')
+const webpack = require('webpack')
+const config = require('./package.json')
 const path = require('path')
 
 module.exports = {
@@ -39,12 +41,20 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        contentBase: path.resolve(__dirname, "./dist"),
+        hot: true,
+        host: 'localhost',
+        port: 8080
+    },
     plugins: [
+        new CleanWebpackPlugin(['./build']),
         new HTMLWebpackPlugin({
             fileName: 'index.html',
             template: path.resolve(__dirname, "./test/index.html"),
             inject: true,
             hash: true
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }
