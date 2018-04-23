@@ -17,7 +17,13 @@ export default class Head extends React.PureComponent {
             domList.push(
                 <li key='Uid'>
                     <em>用户名：</em>
-                    <span className={styles.color_blue}>{basicInfo.Uid}</span>
+                    <a 
+                        className={styles.color_blue} 
+                        target="_blank" 
+                        href={`http://service.sh.ctriptravel.com/cii/crm/memberdetail.asp?uid=${basicInfo.Uid}`}
+                    >
+                        {basicInfo.Uid}
+                    </a>
                 </li>
             )
         }

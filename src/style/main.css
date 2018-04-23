@@ -1,21 +1,17 @@
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { margin:0; padding:0; }
-body { font-size:12px; line-height:1.5; font-family:Tahoma,Simsun,sans-serif; color:#333; background:#fff; }
-img, fieldset { margin:0; padding:0; border:0; }
-address,cite,dfn,em,var,i{font-style:normal;font-weight:400}
-input, textarea {font-size:14px;}
-table { border-collapse:collapse; }
-a { color:#0065bb; text-decoration:none; outline:none; }
-a:hover { text-decoration:underline; }
-h1, h2, h3, h4, h5 { font-family:Arial,Simsun,sans-serif; }
 ul li, ol li { list-style:none; }
-dfn { font-style:normal; font-size:12px; font-family:Arial !important; }
-select { padding:1px; font-family:Arial,Simsun,sans-serif; border:1px solid #CCC; background-color:#FFF; }
+.offline_header_box, .offline_side_nav{ font-size:12px; line-height:1.5; font-family:Tahoma,Simsun,sans-serif; color:#333; background:#fff; }
+.offline_header_box img { margin:0; padding:0; border:0; }
+.offline_header_box em { font-style:normal;font-weight:400}
+.offline_header_box a { color:#0065bb; text-decoration:none; outline:none; }
+.offline_header_box a:hover { text-decoration:underline; }
+
 .basefix,.layoutfix { *zoom:1; }
 .basefix:after,.layoutfix:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
 .float_left { float:left !important; }
 .float_right { float:right !important; }
-.color_blue{color:#0087cc;}
-.color_orange{color:#ff6600;}
+.offline_header_box .color_blue{color:#0087cc;}
+.offline_header_box .color_orange{color:#ff6600;}
 .weibo{ background-image: url(http://picint.sh.ctriptravel.com/offline_book/new_icon.png);background-repeat: no-repeat;}
 .weibo{ width:20px; height:23px; display:inline-block; vertical-align:-5px;}
 .weibo.v1{ background-position:-33px -10px;}
@@ -45,7 +41,7 @@ select { padding:1px; font-family:Arial,Simsun,sans-serif; border:1px solid #CCC
 .offline_header_nav li:after{content:"";position:absolute;right:0;top:50%;margin-top:-5px;height:12px;width:1px;background:#999;}
 .offline_header_nav em{color:#999;display:inline-block;}
 .offline_side_nav{ position:fixed; right:10px; z-index:9999; width:40px; border:1px solid #bfdfff; border-bottom:0; font-size:12px; background:#f8fcfe; color:#0087cc; top:0px; _position:absolute; }
-.offline_side_nav a{ display:block; border-bottom:1px solid #bfdfff; text-align:center; padding:10px 5px;}
+.offline_side_nav a{ display:block; border-bottom:1px solid #bfdfff; text-align:center; padding:10px 5px; color:#0065bb; text-decoration:none; outline:none;}
 .offline_side_nav a:hover{ background:#39a7ee; color:#ffffff; text-decoration:none;}
 
 .slide_index_nav{margin-top:10px;}

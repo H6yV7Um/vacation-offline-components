@@ -1,5 +1,3 @@
-// const HTMLWebpackPlugin = require('html-webpack-plugin')
-// const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
 // const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const path = require('path')

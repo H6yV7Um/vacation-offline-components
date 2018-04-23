@@ -1,6 +1,6 @@
 {
-  "name": "vacation-offline-components",
-  "version": "0.0.2",
+  "name": "@ctrip/vacation-offline-components",
+  "version": "0.0.3",
   "description": "some components about vacation's offline site",
   "main": "index.js",
   "scripts": {
