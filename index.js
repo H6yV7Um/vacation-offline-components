@@ -1,1 +1,1 @@
-module.exports = require('./dist/main.bundle.js')
+module.exports = require('./dist/vacation-offline-components.min.js')

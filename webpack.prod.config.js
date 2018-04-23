@@ -7,10 +7,10 @@ module.exports = {
         'index': path.resolve(__dirname, "./src/index.js")
     },
     output: {
-        filename: "main.bundle.js",
+        filename: "vacation-offline-components.min.js",
         path: path.resolve(__dirname, "./dist"),
-        library: 'vacation-offline-components',
-        libraryTarget: "commonjs2"
+        library: 'vacationOfflineComponents',
+        libraryTarget: "umd"
     },
     module: {
         rules: [
