@@ -19,10 +19,10 @@ export default (props) => {
 const formatEnv = () => {
     let envStr = 'ctripcorp.com'
     if(typeof window !== 'undefined') {
-        const href = window.location.href
-        if(/uat\.qa\.nt/.test(href)){
+        const hostname = window.location.hostname
+        if(/uat\.qa\.nt/.test(hostname)){
             envStr = 'uat.qa.nt.ctripcorp.com'
-        } else if(/fat\d{0,2}\.qa\.nt/.test(href) || /127\.0\.0\.1/.test(href) || /localhost/.test(href)) {
+        } else if(/fat\d{0,2}\.qa\.nt/.test(hostname) || /127\.0\.0\.1/.test(hostname) || /localhost/.test(hostname)) {
             envStr = 'fat29.qa.nt.ctripcorp.com'
         } else {
             envStr = 'ctripcorp.com'
