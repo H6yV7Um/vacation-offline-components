@@ -1,11 +1,11 @@
 {
   "name": "@ctrip/vacation-offline-components",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "some components about vacation's offline site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack.dev.config.js",
+    "start": "webpack --mode development --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js"
   },
   "keywords": [

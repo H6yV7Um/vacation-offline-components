@@ -1,6 +1,6 @@
 import React from 'react'
 const styles = require('../style/main.css')
-export default class Head extends React.PureComponent {
+export default class Head extends React.Component {
 
     renderUserInfo(userInfo = {}) {
         let domList = []
