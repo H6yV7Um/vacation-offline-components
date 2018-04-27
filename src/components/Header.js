@@ -20,7 +20,7 @@ export default class Head extends React.Component {
                     <a 
                         className={styles.color_blue} 
                         target="_blank" 
-                        href={`http://service.sh.ctriptravel.com/cii/crm/memberdetail.asp?uid=${basicInfo.Uid}`}
+                        href={`http://service.${formatEnv()}/cii/crm/memberdetail.asp?uid=${basicInfo.Uid}`}
                     >
                         {basicInfo.Uid}
                     </a>
@@ -96,3 +96,19 @@ export default class Head extends React.Component {
         )
     }
 }
+
+const formatEnv = (hostname) => {
+    let envStr = 'sh.ctriptravel.com'
+    if(typeof window !== 'undefined') {
+        hostname = window.location.hostname
+    }
+    if(/uat\.qa\.nt/.test(hostname)){
+        envStr = 'uat.qa.nt.ctripcorp.com'
+    } else if(/fat\d*\.qa\.nt/i.test(hostname) || /^localhost|10\.32|127\.0/i.test(hostname)) {
+        envStr = 'fat29.qa.nt.ctripcorp.com'
+    } else {
+        envStr = 'sh.ctriptravel.com'
+    }
+    return envStr
+}
+

@@ -47,7 +47,7 @@ module.exports = {
         host: 'localhost',
         port: 8080
     },
-    devtool: "inline-source-map",
+    devtool: "cheap-module-source-map",
     plugins: [
         new CleanWebpackPlugin(['./build']),
         new HTMLWebpackPlugin({
